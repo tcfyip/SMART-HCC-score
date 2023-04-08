@@ -1,6 +1,6 @@
 ---
 title: "LSM-XGB HCC score"
-author: "*Huapeng Lin*, *Guanlin Li*, Xinrong Zhang, Lilian Y Liang, Grace LH Wong, Pong-Chi Yuen, Henry Lik-Yuen Chan, Stephen Lam Chan, Vincent Wai-Sun Wong, Victor de Lédinghen, Seung Up Kim, Terry Cheuk-Fung Yip"
+author: "*Huapeng Lin*, *Guanlin Li*, Xinrong Zhang, Lilian Yan Liang, Grace Lai-Hung Wong, Pong-Chi Yuen, Henry Lik-Yuen Chan, Stephen Lam Chan, Vincent Wai-Sun Wong, Victor de Lédinghen, Seung Up Kim, Terry Cheuk-Fung Yip"
 date: "2023-04-08"
 output: html_document
 ---
