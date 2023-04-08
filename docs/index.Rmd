@@ -1,25 +1,29 @@
 ---
 title: "LSM-XGB HCC score"
 author: "*Huapeng Lin*, *Guanlin Li*, Xinrong Zhang, Lilian Y Liang, Grace LH Wong, Pong-Chi Yuen, Henry Lik-Yuen Chan, Stephen Lam Chan, Vincent Wai-Sun Wong, Victor de Lédinghen, Seung Up Kim, Terry Cheuk-Fung Yip"
-date: "2023-04-07"
+date: "2023-04-08"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+For online calculator, please visit <https://tcfyip.shinyapps.io/lsm-xgb_hcc_score/>.
 
-You can download all the necessary files from <https://github.com/tcfyip/LSM-XGB-HCC-score>. Please click "Code" and then "Download ZIP". ![Click Code and Download ZIP](download.PNG){width="30%"}
+For offline use, you can download all the files from <https://github.com/tcfyip/LSM-XGB-HCC-score>. 
+Please click "Code" and then "Download ZIP". ![Click Code and Download ZIP](download.PNG){width="30%"}
 
-Then you can put all the downloaded files in the same directory of your local computer and run the following R codes with R installed. Or you may want to fork the whole repository to your GitHub. The R codes have been tested in R4.0.3 and R4.0.5.
+Then you can put all the downloaded files in the same directory of your local computer and run the following R codes with R installed. Or you may want to fork the whole repository to your GitHub. The R codes have been tested in R v4.0.3 and v4.0.5.
 
-## Required R package in R4.0.3 or R4.0.5
+## Required R packages
 
 -   caret (v6.0-92) and its dependencies
+-   xgboost (v1.6.0.1)
 
 ```{r}
-# Uncomment and install R package 'caret' (v6.0-92) for first time usage
+# Uncomment and install R packages 'caret' (v6.0-92) and 'xgboost' (v1.6.0.1) for first time usage
 # devtools::install_version("caret", version = "6.0-92", repos = "http://cran.us.r-project.org")
+# devtools::install_version("xgboost", version = "1.6.0.1", repos = "http://cran.us.r-project.org")
 ```
 
 ## LSM-XGB HCC score
