@@ -1,7 +1,7 @@
 ---
 title: "LSM-XGB HCC score"
 author: "*Huapeng Lin*, *Guanlin Li*, Xinrong Zhang, Lilian Yan Liang, Grace Lai-Hung Wong, Pong-Chi Yuen, Henry Lik-Yuen Chan, Stephen Lam Chan, Vincent Wai-Sun Wong, Victor de Lédinghen, Seung Up Kim, Terry Cheuk-Fung Yip"
-date: "2023-04-08"
+date: "2023-04-09"
 output: html_document
 ---
 
@@ -39,16 +39,12 @@ Age = 50
 Gender = 1
 # Etiology (0: viral hepatitis, 1: non-viral hepatitis)
 Etiology = 0
-# Presence of diabetes (1: Yes, 0: No)
-DM = 0
 # Presence of hypertension (1: Yes, 0: No)
 HT = 0
 # Alanine aminotransferase (IU/L)
 ALT = 35
 # Albumin (g/L)
 ALB = 42
-# Total bilirubin (μmol/L)
-TB = 11.1
 # Alkaline phosphatase (IU/L)
 ALP = 57
 # Platelet (x10^9/L)
@@ -61,8 +57,7 @@ LSM = 8.8
 # Form a data frame
 pt1 = data.frame(
   'Age'=Age, 'Gender'=Gender, 'Etiology'=Etiology, 
-  'DM'=DM, 'HT'=HT, 'ALT'=ALT, 
-  'ALB'=ALB, 'TB'=TB, 'ALP'=ALP, 
+  'HT'=HT, 'ALT'=ALT, 'ALB'=ALB, 'ALP'=ALP, 
   'PLT'=PLT, 'Cr'=Cr, 'LSM'=LSM)
 
 # Load necessary R package
