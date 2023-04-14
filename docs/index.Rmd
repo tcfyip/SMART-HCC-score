@@ -1,7 +1,7 @@
 ---
 title: "LSM-XGB HCC score"
 author: "*Huapeng Lin*, *Guanlin Li*, Xinrong Zhang, Lilian Yan Liang, Grace Lai-Hung Wong, Pong-Chi Yuen, Henry Lik-Yuen Chan, Stephen Lam Chan, Vincent Wai-Sun Wong, Victor de Lédinghen, Seung Up Kim, Terry Cheuk-Fung Yip"
-date: "2023-04-09"
+date: "2023-04-14"
 output: html_document
 ---
 
@@ -43,8 +43,6 @@ Etiology = 0
 HT = 0
 # Alanine aminotransferase (IU/L)
 ALT = 35
-# Albumin (g/L)
-ALB = 42
 # Alkaline phosphatase (IU/L)
 ALP = 57
 # Platelet (x10^9/L)
@@ -57,7 +55,7 @@ LSM = 8.8
 # Form a data frame
 pt1 = data.frame(
   'Age'=Age, 'Gender'=Gender, 'Etiology'=Etiology, 
-  'HT'=HT, 'ALT'=ALT, 'ALB'=ALB, 'ALP'=ALP, 
+  'HT'=HT, 'ALT'=ALT, 'ALP'=ALP, 
   'PLT'=PLT, 'Cr'=Cr, 'LSM'=LSM)
 
 # Load necessary R package
