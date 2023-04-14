@@ -11,7 +11,7 @@
 
 <meta name="author" content="Huapeng Lin, Guanlin Li, Xinrong Zhang, Lilian Yan Liang, Grace Lai-Hung Wong, Pong-Chi Yuen, Henry Lik-Yuen Chan, Stephen Lam Chan, Vincent Wai-Sun Wong, Victor de Lédinghen, Seung Up Kim, Terry Cheuk-Fung Yip" />
 
-<meta name="date" content="2023-04-09" />
+<meta name="date" content="2023-04-14" />
 
 <title>LSM-XGB HCC score</title>
 
@@ -355,7 +355,7 @@ display: none;
 Zhang, Lilian Yan Liang, Grace Lai-Hung Wong, Pong-Chi Yuen, Henry
 Lik-Yuen Chan, Stephen Lam Chan, Vincent Wai-Sun Wong, Victor de
 Lédinghen, Seung Up Kim, Terry Cheuk-Fung Yip</h4>
-<h4 class="date">2023-04-09</h4>
+<h4 class="date">2023-04-14</h4>
 
 </div>
 
@@ -392,8 +392,6 @@ Etiology = 0
 HT = 0
 # Alanine aminotransferase (IU/L)
 ALT = 35
-# Albumin (g/L)
-ALB = 42
 # Alkaline phosphatase (IU/L)
 ALP = 57
 # Platelet (x10^9/L)
@@ -406,7 +404,7 @@ LSM = 8.8
 # Form a data frame
 pt1 = data.frame(
   &#39;Age&#39;=Age, &#39;Gender&#39;=Gender, &#39;Etiology&#39;=Etiology, 
-  &#39;HT&#39;=HT, &#39;ALT&#39;=ALT, &#39;ALB&#39;=ALB, &#39;ALP&#39;=ALP, 
+  &#39;HT&#39;=HT, &#39;ALT&#39;=ALT, &#39;ALP&#39;=ALP, 
   &#39;PLT&#39;=PLT, &#39;Cr&#39;=Cr, &#39;LSM&#39;=LSM)
 
 # Load necessary R package
@@ -418,7 +416,7 @@ m_xgb = readRDS(&quot;LSM_XGB_HCC.rds&quot;)
 score = round(predict(m_xgb, pt1, type=&quot;prob&quot;)$yes, 3)
 
 paste(&quot;The LSM-XGB HCC score is&quot;, score)</code></pre>
-<pre><code>## [1] &quot;The LSM-XGB HCC score is 0.018&quot;</code></pre>
+<pre><code>## [1] &quot;The LSM-XGB HCC score is 0.016&quot;</code></pre>
 <p>The following codes calculate LSM-XGB HCC score in a cohort of
 patients.</p>
 <pre class="r"><code># Remark: The data set should contain the 12 necessary columns:
@@ -436,17 +434,17 @@ m_xgb = readRDS(&quot;LSM_XGB_HCC.rds&quot;)
 scores = round(predict(m_xgb, pts, type=&quot;prob&quot;)$yes, 3)
 
 head(cbind(pts, scores), 10)</code></pre>
-<pre><code>##    ID Age Gender Etiology HT ALT  ALB ALP PLT  Cr  LSM scores
-## 1   1  58      1        1  1  14 47.6  73 262  69  4.6  0.006
-## 2   2  73      0        0  1  17 43.5  79 186 508  3.5  0.007
-## 3   3  59      1        0  0  43 44.8 129  54  89 31.1  0.230
-## 4   4  57      0        1  1  23 40.8  68 185  78  4.8  0.009
-## 5   5  39      1        1  1  26 44.1  48 266  70  8.9  0.007
-## 6   6  66      1        0  1  23 42.9  81 159  82  6.3  0.063
-## 7   7  51      1        1  1 124 45.6  93 225  93 11.1  0.005
-## 8   8  46      0        0  0  73 47.3  84 161  47 11.6  0.039
-## 9   9  51      1        0  0  22 44.1  35 194  46  4.0  0.005
-## 10 10  56      0        1  1  22 42.0  69 197 220  7.6  0.006</code></pre>
+<pre><code>##    ID Age Gender Etiology HT ALT ALP PLT  Cr  LSM scores
+## 1   1  58      1        1  1  14  73 262  69  4.6  0.006
+## 2   2  73      0        0  1  17  79 186 508  3.5  0.004
+## 3   3  59      1        0  0  43 129  54  89 31.1  0.210
+## 4   4  57      0        1  1  23  68 185  78  4.8  0.011
+## 5   5  39      1        1  1  26  48 266  70  8.9  0.007
+## 6   6  66      1        0  1  23  81 159  82  6.3  0.064
+## 7   7  51      1        1  1 124  93 225  93 11.1  0.004
+## 8   8  46      0        0  0  73  84 161  47 11.6  0.037
+## 9   9  51      1        0  0  22  35 194  46  4.0  0.002
+## 10 10  56      0        1  1  22  69 197 220  7.6  0.004</code></pre>
 </div>
 
 
