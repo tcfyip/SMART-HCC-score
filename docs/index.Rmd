@@ -72,8 +72,8 @@ The following code snippet provides the calculation for the SMART HCC score of a
 
 ```{r}
 
-# Remark: The data set should contain the 12 necessary columns:
-# Age, Gender, Etiology, DM, HT, ALT, ALB, TB, ALP, PLT, Cr, LSM
+# Remark: The data set should contain 9 necessary columns:
+# Age, Gender, Etiology, HT, ALT, ALP, PLT, Cr, LSM
 # Please refer to above on the units and the coding of the categories
 
 # Read in the cohort of patients in csv format
