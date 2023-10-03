@@ -1,9 +1,9 @@
-# LSM-XGB-HCC-score
-The repo serves as a tutorial of the use of LSM-XGB HCC score developed by Huapeng LIN and Guanlin LI et al.. 
-This GitHub Page https://tcfyip.github.io/LSM-XGB-HCC-score/ demonstrates how to calculate LSM-XGB HCC score for a single patient and a cohort of patients. <br />
+# SMART-HCC-score
+This repo offers a comprehensive guide on utilizing the SMART HCC score developed by Huapeng Lin, Guanlin Li, and our colleagues and collaborators. 
+This GitHub Page https://tcfyip.github.io/SMART-HCC-score/ provides step-by-step instructions on how to calculate the SMART HCC score for both individual patients and a group of patients. <br />
 
-You can also choose to run the calculator online via: https://tcfyip.shinyapps.io/lsm-xgb_hcc_score/
+If you prefer using the online calculator, you can access the it directly at https://tcfyip.shinyapps.io/smart_hcc_score/.
 
-For any enquiry, please feel free to contact Terry Cheuk-Fung YIP via tcfyip@cuhk.edu.hk
+For any inquiries or further assistance, please don't hesitate to contact Terry Cheuk-Fung Yip at tcfyip@cuhk.edu.hk.
 
-Thank you for your interest in LSM-XGB HCC score. 
+We appreciate your interest in the SMART HCC score!
